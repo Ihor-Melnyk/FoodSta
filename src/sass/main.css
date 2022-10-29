@@ -1,0 +1,129 @@
+:root {
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --bgc-primary: #fefefe;
+  --contour-img: #ffe550;
+  --contour-img-hover: #bbf330;
+  --btn-burger: #7eb101;
+  --btn-burger-hover: #ffe550;
+  --btn-bgc-first: #bbf330;
+  --btn-bgc-first-hover: #b5ff00;
+  --btn-bgc-second: #bbf330;
+  --btn-bgc-second-hover: #bbf330;
+  --btn-bgc-third: #ffffff;
+  --btn-bgc-third-hover: #ffe550;
+  --btn-bgc-fourth: #bbf330;
+  --btn-bgc-fourth-hover: #b5ff00;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-buy {
+  padding: 6px 18px;
+  border-radius: 30px;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--btn-bgc-first);
+  font-weight: 500;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  -webkit-transition-timing-function: var(--transition-timing);
+          transition-timing-function: var(--transition-timing);
+}
+
+.btn-buy:hover {
+  background-color: var(--btn-bgc-first-hover);
+}
+
+.header-burger__btn {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  color: var(--btn-burger);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-timing-function: var(--transition-timing);
+          transition-timing-function: var(--transition-timing);
+}
+
+.header-burger__btn:hover {
+  color: var(--btn-burger-hover);
+}
+
+.btn__icon {
+  fill: currentColor;
+}
+/*# sourceMappingURL=main.css.map */

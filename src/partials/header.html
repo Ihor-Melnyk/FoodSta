@@ -1,8 +1,12 @@
 <section class="header">
-  <div class="container">
-    <a href="index.html">Посилання</a>
+  <div class="container header__thumb">
+    <a href="index.html">
+      <picture>
+        <img class="header-img__logo" src="./images/logo.png" alt="Logo" />
+      </picture>
+    </a>
     <nav class="nav">
-      <ul class="nav__list">
+      <ul class="nav__list list">
         <li class="nav__item">Home</li>
         <li class="nav__item">About</li>
         <li class="nav__item">Service</li>
@@ -11,6 +15,46 @@
       </ul>
     </nav>
     <button class="btn-buy">Order Now</button>
-    <button class="btn-burger"></button>
+
+    <!-- Кнопка Бургер -->
+    <button
+      class="menu-toggle js-open-menu btn header-burger__btn"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="svg btn__icon" width="23" height="16">
+        <use href="./images/symbol-defs.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <!-- Кнопка Закрыть меню -->
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile-menu__icon" width="11" height="11">
+          <use href="./images/symbol-defs.svg#icon-exit"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__item">
+          <a
+            href="./index.html"
+            class="mobile-menu__link mobile-menu__link--aktive link"
+            >Home</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#about" class="mobile-menu__link link">About</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#about" class="mobile-menu__link link">Service</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#products" class="mobile-menu__link link">Menu</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#contacts" class="mobile-menu__link link">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
