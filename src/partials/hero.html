@@ -1,0 +1,101 @@
+<section class="hero">
+  <div class="container hero__thumb">
+    <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+    <p class="hero__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </p>
+    <button class="btn-buy">Order Now</button>
+    <div class="dish">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ./images/dish_desk_1x_1.jpg 1x,
+                  ./images/dish_desk_2x_1.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/dish_tab_1x_1.jpg 1x,
+                  ./images/dish_tab_2x_1.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                class="command__img"
+                src="./images/dish_desk_1x_1.jpg"
+                alt="dish1"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ./images/dish_desk_1x_2.jpg 1x,
+                  ./images/dish_desk_2x_2.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/dish_tab_1x_2.jpg 1x,
+                  ./images/dish_tab_2x_2.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                class="command__img"
+                src="./images/dish_desk_2x_1.jpg"
+                alt="dish2"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ./images/dish_desk_1x_3.jpg 1x,
+                  ./images/dish_desk_2x_3.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/dish_tab_1x_3.jpg 1x,
+                  ./images/dish_tab_2x_3.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                class="command__img"
+                src="./images/dish_desk_1x_3.jpg"
+                alt="dish3"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <button class="btn__slider btn-right">
+            <svg width="16.4" height="29">
+              <use href="./images/symbol-defs.svg#icon-vector_right"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="swiper-button-prev">
+          <button class="btn__slider btn-left">
+            <svg width="16.4" height="29">
+              <use href="./images/symbol-defs.svg#icon-vector_left"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>

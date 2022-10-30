@@ -31,21 +31,65 @@
       referrerpolicy="no-referrer"
     />
     <link rel="icon" href="./images/logo.png" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
-  <body>
+  <body class="overflow--is-hidden">
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
 
     <include src="./partials/header.html"></include>
-    <!-- <include src="./partials/hero.html"></include>
-    <include src="./partials/offerings.html"></include>
-    <include src="./partials/favorites.html"></include>
-    <include src="./partials/customersSay.html"></include>
-    <include src="./partials/subscribe.html"></include>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/modal-map.html"></include> -->
-
+    <main>
+      <include src="./partials/hero.html"></include>
+    </main>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <include src="./partials/scripts-partials.html"></include>
     <script src="./index.js" type="module"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

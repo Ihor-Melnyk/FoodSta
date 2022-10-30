@@ -13,6 +13,7 @@
   --btn-bgc-third-hover: #ffe550;
   --btn-bgc-fourth: #bbf330;
   --btn-bgc-fourth-hover: #b5ff00;
+  --title-color: #2c2c2c;
 }
 
 .container {
@@ -70,6 +71,8 @@ p {
 .header {
   padding: 10px 0;
   background-color: var(--bgc-primary);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .header__thumb {
@@ -105,12 +108,13 @@ p {
 }
 
 .btn-buy {
-  display: none;
-  padding: 6px 18px;
   border-radius: 30px;
-  max-height: 32px;
+  height: 32px;
+  width: 98px;
   border: 0;
-  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -120,7 +124,7 @@ p {
   background-color: var(--btn-bgc-first);
   font-weight: 500;
   font-size: 13px;
-  line-height: 150%;
+  line-height: 1.5;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 0.3s;
@@ -133,8 +137,13 @@ p {
   background-color: var(--btn-bgc-first-hover);
 }
 
+.header .btn-buy {
+  display: none;
+  margin-left: 30px;
+}
+
 @media screen and (min-width: 768px) {
-  .btn-buy {
+  .header .btn-buy {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -194,6 +203,12 @@ p {
           box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -235,5 +250,106 @@ p {
 
 .btn__icon {
   fill: currentColor;
+}
+
+.hero__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 28px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__thumb {
+    padding-top: 159px;
+    padding-bottom: 0;
+  }
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 537px;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    width: 502px;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+.hero__text {
+  padding-right: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__text {
+    width: 336px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__text {
+    width: 502px;
+  }
+}
+
+.dish {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .dish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 320px;
+    height: 320px;
+    border: 14px solid var(--contour-img);
+    border-radius: 50%;
+    position: absolute;
+    top: 149px;
+    right: 40px;
+    background-position: 50% 50%;
+    background-size: 292px, 292px, contain;
+    background-image: url(../images/dish_tab_1x_1.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .dish {
+    width: 580px;
+    height: 580px;
+    border: 26px solid var(--contour-img);
+    top: 14px;
+    right: 30px;
+    background-position: 50% 50%;
+    background-size: 528px, 528px, contain;
+    background-image: url(../images/dish_desk_1x_1.png);
+  }
 }
 /*# sourceMappingURL=main.css.map */
