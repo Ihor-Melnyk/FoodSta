@@ -1,27 +1,30 @@
 .offerings {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  height: 1050px;
+  padding-bottom: 60px;
   padding-top: 41px;
   @media screen and (min-width: 768px) {
+    padding-top: 150px;
+    padding-bottom: 100px;
     margin-top: -35px;
-    height: 1140px;
   }
   @media screen and (min-width: 1280px) {
-    height: 824px;
+    padding-top: 177px;
+    // height: 824px;
     margin: 0 auto;
   }
   background-image: url(../images/offerings/offerings_BG_mob_320_1x.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size: 100%, cover;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/offerings/offerings_BG_mob_320_2x.jpg);
   }
   @media screen and (min-width: 480px) {
-    background-size: contain;
+    background-size: 480px, contain;
     background-image: url(../images/offerings/offerings_BG_mob_480_1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -30,6 +33,7 @@
     }
   }
   @media screen and (min-width: 768px) {
+    background-size: 768px, contain;
     background-image: url(../images/offerings/offerings_BG_tab_1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -38,6 +42,7 @@
     }
   }
   @media screen and (min-width: 1280px) {
+    background-size: 1280px, contain;
     padding: 200px 0;
     background-image: url(../images/offerings/offerings_desk_1x.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -54,6 +59,10 @@
   align-items: center;
 
   gap: 28px;
+
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+  }
   @media screen and (min-width: 1280px) {
     flex-direction: row;
   }
@@ -62,22 +71,69 @@
 .offerings__image {
   width: 280px;
   height: 309px;
-  margin-bottom: 60px;
-  background-image: url(../images/offerings/mob/Apple.png);
+  margin-bottom: 32px;
+  background-image: url(../images/offerings/mob/Apple_mob.png);
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/mob/Apple_mob_2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    width: 704px;
+    height: 394px;
+    background-image: url(../images/offerings/tab/Apple_tab.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/tab/Apple_tab_2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+    height: 604px;
+    background-image: url(../images/offerings/desk/Apple_desk.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/desk/Apple_desk_2x.png);
+    }
+  }
 }
 
-// .offerings__info {
-//   @media screen and (min-width: 1280px) {
-//     display: flex;
-//     // flex-direction: row;
-//   }
-// }
+.offerings__info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 573px;
+    // display: flex;
+    // flex-direction: row;
+  }
+}
+
+.thumb-info {
+  max-width: 526.17px;
+}
 
 .offerings__title {
   font-weight: 700;
   font-size: 28px;
   line-height: calc(33 / 28);
   color: var(--title-color);
+  margin-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    // display: flex;
+    // flex-direction: row;
+  }
 }
 
 .text {
@@ -85,6 +141,20 @@
   font-weight: 400;
   line-height: calc(16 / 14);
   color: var(--title-color);
+}
+
+.thumb-order-and-delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    gap: 67px;
+  }
 }
 
 .icon {
@@ -123,5 +193,31 @@
   &:hover,
   &:focus {
     border: 2px solid var(--border-btn-order);
+  }
+}
+
+.offerings__btn {
+  display: flex;
+  margin-right: auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.btn-more {
+  height: 34px;
+  width: 83px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  display: flex;
+  gap: 7.75px;
+  background-color: inherit;
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }

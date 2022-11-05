@@ -1,0 +1,32 @@
+.customers-Say {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgb(64, 184, 24);
+}
+
+.Say__title {
+}
+
+.customers-Say__text {
+}
+
+.customer {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--bgc-primary);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.customer__text {
+}
+
+.author {
+  width: 160px;
+  display: flex;
+  gap: 16px;
+  border-right: 1px solid gray;
+}
