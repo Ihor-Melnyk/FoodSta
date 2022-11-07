@@ -1,6 +1,52 @@
-<section class="subscribe">
+<section class="subscribe" id="subscribe">
   <div class="container">
-    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-    <p class="subscribe__text">істостало сонатиаснова сотно санти</p>
+    <div class="subscribe__img">
+      <picture>
+        <source
+          srcset="
+            ./images/subscribe/desk/banan_desk_1x.png 1x,
+            ./images/subscribe/desk/banan_desk_2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/subscribe/tab/banan_tab_1x.png 1x,
+            ./images/subscribe/tab/banan_tab_2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/subscribe/mob/banan_mob_1x.png 1x,
+            ./images/subscribe/mob/banan_mob_2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="subscribe__img"
+          src="./images/subscribe/desk/banan_desk_1x.png"
+          alt="banan"
+        />
+      </picture>
+    </div>
+
+    <div class="subscribe__info">
+      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel cumque,
+        excepturi ratione accusantium corrupti.
+      </p>
+
+      <form class="form">
+        <input
+          type="email"
+          name="email"
+          class="form__input"
+          placeholder="enter your email"
+        />
+        <button type="submit" class="btn-buy form__btn">Subscribe</button>
+      </form>
+    </div>
   </div>
 </section>
