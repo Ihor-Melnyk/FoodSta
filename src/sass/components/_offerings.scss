@@ -12,6 +12,7 @@
   @media screen and (min-width: 1280px) {
     padding-top: 177px;
     margin: 0 auto;
+    padding-bottom: 43px;
   }
   background-image: url(../images/offerings/offerings_BG_mob_320_1x.jpg);
   background-repeat: no-repeat;
@@ -42,7 +43,6 @@
   }
   @media screen and (min-width: 1280px) {
     background-size: 1280px, contain;
-    padding: 200px 0;
     background-image: url(../images/offerings/offerings_desk_1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -92,6 +92,7 @@
   @media screen and (min-width: 1280px) {
     width: 550px;
     height: 604px;
+    margin-bottom: 0;
     background-image: url(../images/offerings/desk/Apple_desk.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
